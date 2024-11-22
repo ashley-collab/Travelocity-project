@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.A.Q</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Darker text color for better readability */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 28px; /* Equivalent to text-3xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    text-align: center;
+    margin-bottom: 24px; /* Equivalent to mb-6 */
+    color: #007bff; /* Blue color for title */
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Equivalent to space-y-4 */
+}
+
+.faq-item {
+    background-color: #ffffff;
+    padding: 16px; /* Equivalent to p-4 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.faq-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-size: 18px; /* Equivalent to text-lg */
+}
+
+.faq-question i {
+    transition: transform 0.2s;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 8px; /* Equivalent to pt-2 */
+    color: #666; /* Slightly lighter color for the answer text */
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-item.open .faq-question i {
+    transform: rotate(180deg);
+}
+#header {
+    background-color: #ffffff; /* Equivalent to bg-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px; /* Equivalent to px-4 py-4 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-title {
+    font-size: 24px; /* Equivalent to text-3xl */
+    font-weight: 700; /* Equivalent to font-bold */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: plum;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="header-container">
+            <h1 id="site-title">Travelocity</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/attractive5.html">Services</a></li>
+                    <li><a href="/attractive6.html">Schedule Booking</a></li>
+                    <li><a href="/attractive7.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>F.A.Q</h1>
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is there a travel city rewards program?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Travel City offers a rewards program where you can earn points for bookings and redeem them for discounts on future trips.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I change or cancel my bookings?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can change or cancel your bookings based on the policy of the service provider. Please check the specific terms and conditions of your booking.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Does Travel City offer insurance?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Travel City offers various travel insurance options to ensure your trips are protected. You can select the insurance plan that best suits your needs during the booking process.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I contact Travel City customer service?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can contact Travel City customer service via phone, email, or live chat on our website. Our support team is available 24/7 to assist you with any inquiries.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I book flights or hotels on Travel City?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Booking flights or hotels on Travel City is easy. Just search for your destination, select your preferred options, and follow the on-screen instructions to complete your booking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

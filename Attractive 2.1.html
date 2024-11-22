@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelocity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Equivalent to bg-white */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    background-color: #ffffff; /* Equivalent to bg-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px; /* Equivalent to p-4 */
+}
+
+#site-title {
+    font-size: 24px; /* Equivalent to text-2xl */
+    font-weight: 700; /* Equivalent to font-bold */
+}
+
+#nav-list {
+    display: flex;
+    gap: 16px; /* Equivalent to space-x-4 */
+}
+
+.nav-link {
+    color: #4a5568; /* Equivalent to text-gray-700 */
+    text-decoration: none;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+#image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#main-image {
+    width: 100%;
+    height: 256px; /* Equivalent to h-64 */
+    object-fit: cover;
+}
+
+#text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); /* Initial state with scaling */
+    background-color: #ffffff; /* Equivalent to bg-white */
+    padding: 32px; /* Equivalent to p-8 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out; /* Transition effect */
+}
+
+#image-container:hover #text-overlay {
+    transform: translate(-50%, -50%) scale(1); /* Scale up on hover */
+}
+
+    </style>
+</head>
+<body>
+    
+    <main id="main-content">
+        <div id="image-container">
+            <img src="/andaman-sea-beach-beautiful-459252.jpg" alt="Beach view with ocean and sky" id="main-image">
+            <div id="text-overlay">
+                <h2 id="about-heading">About Us</h2>
+                <hr id="about-divider">
+                <p id="about-text">Welcome to Travelocity, where we simplify your travel planning by providing detailed information on navigation, destinations, accommodations, flights, and itineraries. It is basically a booking platform which makes ease for the people to plan their trips effectively.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

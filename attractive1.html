@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelocity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/color\ fluid.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e90ff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style-type: none;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #ff6347;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('path/to/your/background-image.jpg'); /* Replace with actual background URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-box {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .content-box h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1e90ff;
+            text-transform: uppercase;
+        }
+
+        .content-box p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .content-box .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: 2px solid #1e90ff;
+            color: #1e90ff;
+            background-color: transparent;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .content-box .btn:hover {
+            background-color: #1e90ff;
+            color: #fff;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .logo {
+            animation: bounce 2s infinite;
+        }
+
+        .content-box p {
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .content-box .btn {
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 1rem;
+            }
+
+            .content-box {
+                padding: 1rem;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                padding: 1rem 0;
+                background-color: rgba(255, 255, 255, 0.9);
+                margin-top: 1rem;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Travelocity</div>
+        <ul class="nav-links">
+            <li><a href="/attractive1.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Schedule Booking</a></li>
+            <li><a href="#">F.A.Q</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="hero">
+        <div class="overlay">
+            <div class="content-box">
+                <h1>TraveloCity</h1>
+                <p>Your All-in-One Travel Guide</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

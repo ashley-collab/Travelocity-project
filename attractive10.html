@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Activities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/light_scenery_by_grmbl.jpg');
+    background-size: cover;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.right-section {
+    width: 50%;
+    padding-left: 40px;
+    border-left: 1px solid #d1d1d1;
+}
+
+h1 {
+    font-size: 32px; /* Equivalent to text-4xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+    border-radius: 8px;
+}
+
+.description {
+    color: #4a5568; /* Equivalent to text-gray-700 */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.details p {
+    margin: 8px 0; /* Equivalent to mb-2 */
+}
+
+.form-group {
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600; /* Equivalent to font-medium */
+    color: #4a5568; /* Equivalent to text-gray-700 */
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d1d1; /* Equivalent to border-gray-300 */
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    background-color: #f97316; /* Equivalent to bg-orange-500 */
+    color: #fff;
+    font-weight: 700; /* Equivalent to font-bold */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 16px; /* Equivalent to mt-4 */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>ADVENTURE ACTIVITIES</h1>
+            <img src="/gradient-adventure-background_23-2149065658.avif" alt="A boat on the water with people enjoying a scenic view." class="main-image">
+            <p class="description">Here you can add a short description about the service that is offered to book general information, terms and more. Here you can add a short description about the service that is offered to book general information, terms and more.</p>
+            <div class="details">
+                <p><strong>Category:</strong> Business</p>
+                <p><strong>Service Duration:</strong> 02:30 Hours</p>
+                <p><strong>Address:</strong> New York, United States (Map)</p>
+                <p><strong>Price:</strong> ₹15000</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="form-group">
+                <label for="day">Choose Day</label>
+                <select id="day">
+                    <option value="Sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time">Choose Time</label>
+                <select id="time">
+                    <option>12:00 PM</option>
+                    <option>01:00 PM</option>
+                    <option>02:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>04:00 PM</option>
+                    <option>05:00 PM</option>
+                    <option>06:00 PM</option>
+                    <option>07:00 PM</option>
+                    <option>08:00 PM</option>
+                    <option>09:00 PM</option>
+                    <option>10:00 PM</option>
+                </select>
+                <label for="countries">Choose country</label>
+                    <select id="countries">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>Australia</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Sweden</option>
+                        <option>Spain</option>
+                        <option>Japan</option>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>South Korea</option>
+                        <option>Mexico</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Brazil</option>
+                        <option>Colombia</option>
+                        <option>Peru</option>
+                        <option>Venezuela</option>
+                        <option>Uruguay</option>
+                    </select>
+            </div>
+            <button id="book-now">BOOK NOW!</button>
+        </div>
+    </div>
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', () => {
+    const bookNowButton = document.getElementById('book-now');
+    bookNowButton.addEventListener('click', () => {
+        window.location.href = 'booking-confirmation.html'; // Change this to the URL of your booking confirmation page
+    });
+});
+
+    </script>
+
+</body>
+</html>
+

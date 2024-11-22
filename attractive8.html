@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/vivid-blurred-colorful-wallpaper-background_58702-3440.avif');
+    padding: 40px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px; /* Equivalent to text-4xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+hr {
+    margin-bottom: 24px; /* Equivalent to mb-6 */
+}
+
+.content {
+    display: flex;
+}
+
+.left-section {
+    width: 50%;
+    padding-right: 16px; /* Equivalent to pr-4 */
+}
+
+.right-section {
+    width: 50%;
+    padding-left: 16px; /* Equivalent to pl-4 */
+}
+
+.main-image {
+    border-radius: 8px;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.details {
+    margin-top: 24px; /* Equivalent to mt-6 */
+}
+
+.details p {
+    margin: 4px 0;
+}
+
+h2 {
+    font-size: 20px; /* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-top: 16px; /* Equivalent to mt-4 */
+}
+
+.booking-form {
+    background: #f0f0f0; /* Equivalent to bg-gray-100 */
+    padding: 24px; /* Equivalent to p-6 */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+    display: block;
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+.booking-form select,
+.booking-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d1d1; /* Equivalent to border-gray-300 */
+    border-radius: 8px;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+button {
+    width: 100%;
+    background-color: #f97316; /* Equivalent to bg-orange-500 */
+    color: #fff;
+    font-weight: 700; /* Equivalent to font-bold */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>FLIGHTS BOOKING</h1>
+        <hr>
+        <div class="content">
+            <div class="left-section">
+                <img src="/" alt="Person using a laptop to book flights" class="main-image">
+                <p>Experience the convenience of on-the-go booking with Flights Booking's mobile-friendly design, ensuring you can book your next flight anytime, anywhere.</p>
+                <div class="details">
+                    <p><strong>Category:</strong> Business</p>
+                    <p><strong>Service Duration:</strong> 02:30 Hours</p>
+                    <p><strong>Address:</strong> New York, NY, United States (Map)</p>
+                    <p><strong>Price:</strong> ₹50000</p>
+                </div>
+                <h2>Description</h2>
+                <p>Here you can add more information about the service that is offered for booking.</p>
+            </div>
+            <div class="right-section">
+                <div class="booking-form">
+                    <label for="day">Choose Day</label>
+                    <select name="day" id="day">
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                    <label for="date">Choose Date</label>
+                    <select name="date" id="date">
+                        <option value="12/12/2024">12/12/2024</option>
+                        <option value="12/13/2024">12/13/2024</option>
+                        <option value="12/14/2024">12/14/2024</option>
+                        <option value="12/15/2024">12/15/2024</option>
+                        <option value="12/16/2024">12/16/2024</option>
+                        <option value="12/17/2024">12/17/2024</option>
+                        <option value="12/18/2024">12/18/2024</option>
+                    </select>
+                    <label for="time">Choose Time</label>
+                    <select name="time" id="time">
+                        <option>01:00 PM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+                        <option>05:00 PM</option>
+                        <option>06:00 PM</option>
+                        <option>07:00 PM</option>
+                        <option>08:00 PM</option>
+                        <option>09:00 PM</option>
+                        <option>10:00 PM</option>
+                        <option>11:00 PM</option>
+                        <option>12:00 AM</option>
+                    </select>
+                    <label for="countries">Choose country</label>
+                    <select id="countries">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>Australia</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Sweden</option>
+                        <option>Spain</option>
+                        <option>Japan</option>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>South Korea</option>
+                        <option>Mexico</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Brazil</option>
+                        <option>Colombia</option>
+                        <option>Peru</option>
+                        <option>Venezuela</option>
+                        <option>Uruguay</option>
+                    </select>
+                    <label for="price">Sort by Price</label>
+                    <select name="price" id="price">
+                        <option value="cheap">Cheap to Expensive</option>
+                        <option value="expensive">Expensive to Cheap</option>
+                    </select>
+                    <button id="book-now">BOOK NOW!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+      document.addEventListener('DOMContentLoaded', () => {
+    const sortPrice = document.getElementById('price');
+    sortPrice.addEventListener('change', (event) => {
+        const selectedSort = event.target.value;
+        const container = document.querySelector('.right-section');
+        
+        // Example logic for sorting, actual sorting logic will depend on the data source
+        const items = Array.from(container.children).sort((a, b) => {
+            const priceA = parseInt(a.querySelector('.card-price').textContent.replace('₹', ''));
+            const priceB = parseInt(b.querySelector('.card-price').textContent.replace('₹', ''));
+            return selectedSort === 'cheap' ? priceA - priceB : priceB - priceA;
+        });
+
+        items.forEach(item => container.appendChild(item));
+    });
+
+    // Redirect to a new page when the "Book Now!" button is clicked
+    const bookNowButton = document.getElementById('book-now');
+    bookNowButton.addEventListener('click', () => {
+        window.location.href = 'booking-confirmation.html'; // You can change this to the URL of your booking confirmation page
+    });
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Packages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/Nature-wallpapers-Full-HD-backgroud.jpg');
+    background-size: cover;
+    padding: 40px;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px; /* Equivalent to text-4xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    text-align: center;
+    margin-bottom: 24px; /* Equivalent to mb-5 */
+}
+
+#divider {
+    border-bottom: 2px solid #d1d1d1; /* Equivalent to border-gray-300 */
+    margin-bottom: 24px; /* Equivalent to mb-5 */
+}
+
+#content {
+    display: flex;
+}
+
+#left-section {
+    width: 50%;
+    padding-right: 20px; /* Equivalent to pr-5 */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+#description {
+    color: #4a5568; /* Equivalent to text-gray-700 */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+#left-section p {
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+#right-section {
+    width: 50%;
+    padding-left: 20px; /* Equivalent to pl-5 */
+}
+
+#form-container {
+    background: #f0f0f0; /* Equivalent to bg-gray-100 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-container label {
+    display: block;
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #4a5568; /* Equivalent to text-gray-700 */
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+#form-container select,
+#form-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d1d1; /* Equivalent to border-gray-300 */
+    border-radius: 8px;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+#book-now {
+    width: 100%;
+    background-color: #f97316; /* Equivalent to bg-orange-500 */
+    color: #fff;
+    font-weight: 700; /* Equivalent to font-bold */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>CUSTOM PACKAGES</h1>
+        <hr id="divider">
+        <div id="content">
+            <div id="left-section">
+                <img src="/Custom-Travel-Planning-Icons-2.png" alt="A scenic view of a coastal area" id="main-image">
+                <p id="description">At Custom Packages, we believe that every traveler is unique, and we are committed to crafting bespoke travel experiences that exceed your expectations.</p>
+                <p><strong>Category:</strong> Business</p>
+                <p><strong>Service Duration:</strong> 12:00 Hours</p>
+                <p><strong>Address:</strong> New York, United States (Map)</p>
+                <p><strong>Price:</strong> ₹1000000</p>
+            </div>
+            <div id="right-section">
+                <div id="form-container">
+                    <label for="day">Choose Day</label>
+                    <select id="day">
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                    <label for="time">Choose Time</label>
+                    <select id="time">
+                        <option>12:00 PM</option>
+                        <option>01:00 PM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+                        <option>05:00 PM</option>
+                        <option>06:00 PM</option>
+                        <option>07:00 PM</option>
+                        <option>08:00 PM</option>
+                        <option>09:00 PM</option>
+                        <option>10:00 PM</option>
+                    </select>
+                    <label for="countries">Choose country</label>
+                    <select id="countries">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>Australia</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Sweden</option>
+                        <option>Spain</option>
+                        <option>Japan</option>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>South Korea</option>
+                        <option>Mexico</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Brazil</option>
+                        <option>Colombia</option>
+                        <option>Peru</option>
+                        <option>Venezuela</option>
+                        <option>Uruguay</option>
+                    </select>
+
+                    <button id="book-now">BOOK NOW!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', () => {
+    const bookNowButton = document.getElementById('book-now');
+    bookNowButton.addEventListener('click', () => {
+        window.location.href = 'booking-confirmation.html'; // Change this to the URL of your booking confirmation page
+    });
+});
+
+
+    </script>
+
+</body>
+</html>
+
