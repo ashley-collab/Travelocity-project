@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Schedules - Travelocity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.schedule-table {
+    margin-bottom: 40px;
+}
+
+.schedule-table h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+th {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+td {
+    font-size: 16px;
+}
+#header {
+    background-color: #ffffff; /* Equivalent to bg-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px; /* Equivalent to px-4 py-4 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-title {
+    font-size: 24px; /* Equivalent to text-3xl */
+    font-weight: 700; /* Equivalent to font-bold */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: plum;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div id="header-container">
+            <h1 id="site-title">Travelocity</h1>
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/About .html">About</a></li>
+                    <li><a href="/attractive5.html">Services</a></li>
+                    <li><a href="/attractive6.html">Schedule Booking</a></li>
+                    <li><a href="/attractive7.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+
+    <!-- Transport Schedules Section -->
+    <section id="transport-schedules">
+        <div class="container">
+            <h2>Transport Schedules</h2>
+            <div class="schedule-table">
+                <h3>USA</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transport Type</th>
+                            <th>Company</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Flight</td>
+                            <td>United Airlines</td>
+                            <td>08:00 AM</td>
+                            <td>10:30 AM</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>Train</td>
+                            <td>Amtrak</td>
+                            <td>09:00 AM</td>
+                            <td>12:00 PM</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Bus</td>
+                            <td>Greyhound</td>
+                            <td>07:00 AM</td>
+                            <td>09:00 AM</td>
+                            <td>$30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="schedule-table">
+                <h3>UK</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transport Type</th>
+                            <th>Company</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Flight</td>
+                            <td>British Airways</td>
+                            <td>10:00 AM</td>
+                            <td>12:30 PM</td>
+                            <td>£150</td>
+                        </tr>
+                        <tr>
+                            <td>Train</td>
+                            <td>Great Western Railway</td>
+                            <td>11:00 AM</td>
+                            <td>01:00 PM</td>
+                            <td>£50</td>
+                        </tr>
+                        <tr>
+                            <td>Bus</td>
+                            <td>National Express</td>
+                            <td>06:00 AM</td>
+                            <td>08:00 AM</td>
+                            <td>£20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="schedule-table">
+                <h3>India</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transport Type</th>
+                            <th>Company</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Flight</td>
+                            <td>Air India</td>
+                            <td>07:00 AM</td>
+                            <td>09:00 AM</td>
+                            <td>₹5000</td>
+                        </tr>
+                        <tr>
+                            <td>Train</td>
+                            <td>Indian Railways</td>
+                            <td>05:00 AM</td>
+                            <td>10:00 AM</td>
+                            <td>₹800</td>
+                        </tr>
+                        <tr>
+                            <td>Bus</td>
+                            <td>RedBus</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 PM</td>
+                            <td>₹300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
