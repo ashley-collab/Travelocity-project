@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,129 +9,172 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
-    color: #333; /* Darker text color for better readability */
-}
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Darker text color for better readability */
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 16px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 16px;
+            animation: fadeIn 1s;
+        }
 
-.main-title {
-    font-size: 36px; /* Equivalent to text-4xl */
-    font-weight: 700; /* Equivalent to font-bold */
-    text-align: center;
-    margin-bottom: 40px; /* Equivalent to mb-10 */
-    color: #007bff; /* Blue color for title */
-}
+        .main-title {
+            font-size: 36px; /* Equivalent to text-4xl */
+            font-weight: 700; /* Equivalent to font-bold */
+            text-align: center;
+            margin-bottom: 40px; /* Equivalent to mb-10 */
+            color: #007bff; /* Blue color for title */
+            animation: fadeInUp 1s;
+        }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 32px; /* Equivalent to gap-8 */
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 32px; /* Equivalent to gap-8 */
+        }
 
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
 
-.card {
-    background-color: #ffffff; /* White background */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+        .card {
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: fadeInUp 1s;
+        }
 
-.card:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
+        .card:hover {
+            transform: translateY(-10px); /* Slight lift on hover */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
 
-.card img {
-    width: 100%;
-    height: 160px; /* Equivalent to h-40 */
-    object-fit: cover; /* Equivalent to object-cover */
-}
+        .card img {
+            width: 100%;
+            height: 160px; /* Equivalent to h-40 */
+            object-fit: cover; /* Equivalent to object-cover */
+        }
 
-.card-content {
-    padding: 24px; /* Equivalent to p-6 */
-}
+        .card-content {
+            padding: 24px; /* Equivalent to p-6 */
+        }
 
-.card-title {
-    font-size: 24px; /* Equivalent to text-xl */
-    font-weight: 600; /* Equivalent to font-semibold */
-    margin-bottom: 8px; /* Equivalent to mb-2 */
-    color: #343a40; /* Dark gray for text */
-}
+        .card-title {
+            font-size: 24px; /* Equivalent to text-xl */
+            font-weight: 600; /* Equivalent to font-semibold */
+            margin-bottom: 8px; /* Equivalent to mb-2 */
+            color: #343a40; /* Dark gray for text */
+        }
 
-.card-text {
-    color: #6c757d; /* Medium gray for text */
-    margin-bottom: 16px; /* Equivalent to mb-4 */
-}
+        .card-text {
+            color: #6c757d; /* Medium gray for text */
+            margin-bottom: 16px; /* Equivalent to mb-4 */
+        }
 
-.card-link {
-    color: #007bff; /* Blue color for links */
-    font-weight: 600; /* Equivalent to font-semibold */
-    text-decoration: none;
-    transition: color 0.2s;
-}
+        .card-link {
+            color: #007bff; /* Blue color for links */
+            font-weight: 600; /* Equivalent to font-semibold */
+            text-decoration: none;
+            transition: color 0.2s;
+        }
 
-.card-link:hover {
-    color: #0056b3; /* Darker blue on hover */
-}
-#header {
-    background-color: #ffffff; /* Equivalent to bg-white */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .card-link:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
 
-#header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px; /* Equivalent to px-4 py-4 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        #header {
+            background-color: #ffffff; /* Equivalent to bg-white */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s;
+        }
 
-#site-title {
-    font-size: 24px; /* Equivalent to text-3xl */
-    font-weight: 700; /* Equivalent to font-bold */
-}
+        #header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px; /* Equivalent to px-4 py-4 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        #site-title {
+            font-size: 24px; /* Equivalent to text-3xl */
+            font-weight: 700; /* Equivalent to font-bold */
+        }
 
-header nav ul li {
-    margin-left: 1.5rem;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+        header nav ul li {
+            margin-left: 1.5rem;
+        }
 
-header nav ul li a:hover {
-    color: plum;
-    font-weight: bold;
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
+        header nav ul li a:hover {
+            color: plum;
+            font-weight: bold;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -146,11 +188,12 @@ header nav ul li a:hover {
                     <li><a href="/attractive5.html">Services</a></li>
                     <li><a href="/attractive6.html">Schedule Booking</a></li>
                     <li><a href="/attractive7.html">FAQ</a></li>
+                    <li><a href="/vr.html">VR</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="container">
+    <div class="container parallax" style="background-image: url('https://example.com/path-to-your-background-image.jpg');">
         <h1 class="main-title">SERVICES</h1>
         <div class="grid">
             <div class="card">
@@ -182,4 +225,3 @@ header nav ul li a:hover {
 </body>
 </html>
 
-</html>

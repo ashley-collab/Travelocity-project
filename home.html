@@ -9,147 +9,179 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInDown 1s;
+        }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        header nav ul li {
+            margin-left: 20px;
+        }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-header nav ul li a:hover {
-    color: #ffc107;
-}
+        header nav ul li a:hover {
+            color: #ffc107;
+        }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
 
-h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #007bff;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007bff;
+            animation: fadeInUp 1s;
+        }
 
-#images {
-    background-color: #fff;
-}
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s;
+        }
 
-.image-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+        #images {
+            background-color: #fff;
+        }
 
-.image-grid img {
-    width: 30%;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-.image-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-#header {
-    background-color: #ffffff; /* Equivalent to bg-white */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .image-grid img {
+            width: 30%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-#header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px; /* Equivalent to px-4 py-4 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
-#site-title {
-    font-size: 24px; /* Equivalent to text-3xl */
-    font-weight: 700; /* Equivalent to font-bold */
-}
+        #header {
+            background-color: #ffffff; /* Equivalent to bg-white */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        #header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px; /* Equivalent to px-4 py-4 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-header nav ul li {
-    margin-left: 1.5rem;
-}
+        #site-title {
+            font-size: 24px; /* Equivalent to text-3xl */
+            font-weight: 700; /* Equivalent to font-bold */
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-header nav ul li a:hover {
-    color: plum;
-    font-weight: bold;
-}
+        header nav ul li {
+            margin-left: 1.5rem;
+        }
 
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: plum;
+            font-weight: bold;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
     </style>
 </head>
@@ -165,13 +197,14 @@ header nav ul li a:hover {
                     <li><a href="/attractive5.html">Services</a></li>
                     <li><a href="/attractive6.html">Schedule Booking</a></li>
                     <li><a href="/attractive7.html">FAQ</a></li>
+                    <li><a href="/vr.html">VR</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Introduction Section -->
-    <section id="intro">
+    <section id="intro" class="parallax">
         <div class="container">
             <h2>Welcome to Travelocity</h2>
             <p>Your ultimate travel companion for discovering amazing destinations, finding the best hotels, and getting great deals on flights. Explore the world with ease and confidence with Travelocity by your side.</p>
@@ -191,6 +224,7 @@ header nav ul li a:hover {
 
 </body>
 </html>
+
 
 
 

@@ -9,107 +9,150 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
-    color: #333; /* Darker text color for better readability */
-}
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Darker text color for better readability */
+        }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 32px 16px;
-}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 16px;
+            animation: fadeIn 1s;
+        }
 
-h1 {
-    font-size: 36px; /* Equivalent to text-4xl */
-    font-weight: 700; /* Equivalent to font-bold */
-    text-align: center;
-    margin-bottom: 32px; /* Equivalent to mb-8 */
-    color: #007bff; /* Blue color for title */
-}
+        h1 {
+            font-size: 36px; /* Equivalent to text-4xl */
+            font-weight: 700; /* Equivalent to font-bold */
+            text-align: center;
+            margin-bottom: 32px; /* Equivalent to mb-8 */
+            color: #007bff; /* Blue color for title */
+            animation: fadeInUp 1s;
+        }
 
-.card {
-    background-color: #ffffff; /* White background */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 24px; /* Equivalent to mb-6 */
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+        .card {
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 24px; /* Equivalent to mb-6 */
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: fadeInUp 1s;
+        }
 
-.card:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
+        .card:hover {
+            transform: translateY(-10px); /* Slight lift on hover */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
 
-.card-img {
-    width: 100%;
-    height: 192px; /* Equivalent to h-48 */
-    object-fit: cover; /* Equivalent to object-cover */
-}
+        .card-img {
+            width: 100%;
+            height: 192px; /* Equivalent to h-48 */
+            object-fit: cover; /* Equivalent to object-cover */
+        }
 
-.card-content {
-    padding: 24px; /* Equivalent to p-6 */
-}
+        .card-content {
+            padding: 24px; /* Equivalent to p-6 */
+        }
 
-.card-title {
-    font-size: 24px; /* Equivalent to text-2xl */
-    font-weight: 600; /* Equivalent to font-semibold */
-    margin-top: 16px; /* Equivalent to mt-4 */
-}
+        .card-title {
+            font-size: 24px; /* Equivalent to text-2xl */
+            font-weight: 600; /* Equivalent to font-semibold */
+            margin-top: 16px; /* Equivalent to mt-4 */
+        }
 
-.card-text {
-    color: #6c757d; /* Medium gray for text */
-    margin-top: 8px; /* Equivalent to mt-2 */
-}
+        .card-text {
+            color: #6c757d; /* Medium gray for text */
+            margin-top: 8px; /* Equivalent to mt-2 */
+        }
 
-.card-price {
-    font-size: 20px; /* Equivalent to text-xl */
-    font-weight: 700; /* Equivalent to font-bold */
-    color: #f97316; /* Equivalent to text-orange-600 */
-    margin-top: 16px; /* Equivalent to mt-4 */
-}
-#header {
-    background-color: #ffffff; /* Equivalent to bg-white */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .card-price {
+            font-size: 20px; /* Equivalent to text-xl */
+            font-weight: 700; /* Equivalent to font-bold */
+            color: #f97316; /* Equivalent to text-orange-600 */
+            margin-top: 16px; /* Equivalent to mt-4 */
+        }
 
-#header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px; /* Equivalent to px-4 py-4 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        #header {
+            background-color: #ffffff; /* Equivalent to bg-white */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s;
+        }
 
-#site-title {
-    font-size: 24px; /* Equivalent to text-3xl */
-    font-weight: 700; /* Equivalent to font-bold */
-}
+        #header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px; /* Equivalent to px-4 py-4 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        #site-title {
+            font-size: 24px; /* Equivalent to text-3xl */
+            font-weight: 700; /* Equivalent to font-bold */
+        }
 
-header nav ul li {
-    margin-left: 1.5rem;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+        header nav ul li {
+            margin-left: 1.5rem;
+        }
 
-header nav ul li a:hover {
-    color: plum;
-    font-weight: bold;
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
+        header nav ul li a:hover {
+            color: plum;
+            font-weight: bold;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
     </style>
 </head>
@@ -120,15 +163,17 @@ header nav ul li a:hover {
             <nav>
                 <ul>
                     <li><a href="/home.html">Home</a></li>
-                    <li><a href="/About .html">About</a></li>
+                    <li><a href="/About.html">About</a></li>
                     <li><a href="/attractive5.html">Services</a></li>
                     <li><a href="/attractive6.html">Schedule Booking</a></li>
                     <li><a href="/attractive7.html">FAQ</a></li>
+                    <li><a href="/vr.html">VR</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="container">
+
+    <div class="container parallax" style="background-image: url('path/to/your/background-image.jpg');">
         <h1 class="main-title">SCHEDULE BOOKING</h1>
 
         <div class="card">
@@ -164,43 +209,34 @@ header nav ul li a:hover {
                 <p class="card-text">Here you can add a short description about the service that is offered to book general information, terms and more. Here you can add a short description about the service that is offered to book general information, terms and more.</p>
                 <p class="card-price">₹15000</p>
             </div>
+        </div>
     </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-    const currencySelector = document.getElementById('currency');
-    const cardPrices = document.querySelectorAll('.card-price');
+            const currencySelector = document.getElementById('currency');
+            const cardPrices = document.querySelectorAll('.card-price');
 
-    const currencyRates = {
-        INR: 1,
-        USD: 0.013,
-        EUR: 0.011
-    };
+            const currencyRates = {
+                INR: 1,
+                USD: 0.013,
+                EUR: 0.011
+            };
 
-    currencySelector.addEventListener('change', (event) => {
-        const selectedCurrency = event.target.value;
-        cardPrices.forEach(priceElement => {
-            const basePrice = priceElement.getAttribute('data-price');
-            const convertedPrice = (basePrice * currencyRates[selectedCurrency]).toFixed(2);
-            priceElement.innerHTML = formatCurrency(convertedPrice, selectedCurrency);
-        });
-    });
+            currencySelector.addEventListener('change', (event) => {
+                const selectedCurrency = event.target.value;
+                cardPrices.forEach(priceElement => {
+                    const basePrice = priceElement.getAttribute('data-price');
+                    const convertedPrice = (basePrice * currencyRates[selectedCurrency]).toFixed(2);
+                    priceElement.innerHTML = formatCurrency(convertedPrice, selectedCurrency);
+                });
+            });
 
-    function formatCurrency(amount, currency) {
-        let symbol;
-        switch (currency) {
-            case 'USD':
-                symbol = '$';
-                break;
-            case 'EUR':
-                symbol = '€';
-                break;
-            default:
-                symbol = '₹';
-        }
-        return `${symbol}${amount}`;
-    }
-});
-
-    </script>
-</body>
+            function formatCurrency(amount, currency) {
+                let symbol;
+                switch[_{{{CITATION{{{_1{](https://github.com/Gemini064/SWEN90016_ASG2/tree/d548e7a3679c84c2c7c46e9530e013b083d5b3fa/page-schedule.php)[_{{{CITATION{{{_2{](https://github.com/sshahram/portfolio-generator/tree/5a447bbe2ab6d1a42576ead68dfb636622979dc7/src%2Fpage-template.js)
+            });
+        </script>
+    </body>
 </html>
+

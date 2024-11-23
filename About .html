@@ -5,158 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Travelocity</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInDown 1s;
+        }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        header nav ul li {
+            margin-left: 20px;
+        }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-header nav ul li a:hover {
-    color: #ffc107;
-}
+        header nav ul li a:hover {
+            color: #ffc107;
+        }
 
-section {
-    padding: 80px 20px;
-    text-align: center;
-}
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
 
-h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #007bff;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007bff;
+            animation: fadeInUp 1s;
+        }
 
-#images {
-    background-color: #fff;
-}
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s;
+        }
 
-.image-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+        #images {
+            background-color: #fff;
+        }
 
-.image-container {
-    position: relative;
-    width: 30%;
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-.image-container img {
-    width: 100%;
-    height: 300px; /* Ensuring all images have the same height */
-    object-fit: cover; /* Ensuring the image covers the container proportionally */
-    transition: transform 0.3s, filter 0.3s;
-}
+        .image-container {
+            position: relative;
+            width: 30%;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            animation: fadeIn 1s;
+        }
 
-.image-container:hover img {
-    transform: scale(1.1);
-    filter: brightness(0.7);
-}
-#header {
-    background-color: #ffffff; /* Equivalent to bg-white */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .image-container img {
+            width: 100%;
+            height: 300px; /* Ensuring all images have the same height */
+            object-fit: cover; /* Ensuring the image covers the container proportionally */
+            transition: transform 0.3s, filter 0.3s;
+        }
 
-#header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px; /* Equivalent to px-4 py-4 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .image-container:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.7);
+        }
 
-#site-title {
-    font-size: 24px; /* Equivalent to text-3xl */
-    font-weight: 700; /* Equivalent to font-bold */
-}
+        #header {
+            background-color: #ffffff; /* Equivalent to bg-white */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        #header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px; /* Equivalent to px-4 py-4 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-header nav ul li {
-    margin-left: 1.5rem;
-}
+        #site-title {
+            font-size: 24px; /* Equivalent to text-3xl */
+            font-weight: 700; /* Equivalent to font-bold */
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-header nav ul li a:hover {
-    color: plum;
-    font-weight: bold;
-}
+        header nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: plum;
+            font-weight: bold;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
     </style>
 </head>
@@ -168,17 +211,18 @@ header nav ul li a:hover {
             <nav>
                 <ul>
                     <li><a href="/home.html">Home</a></li>
-                    <li><a href="/About .html">About</a></li>
+                    <li><a href="/About.html">About</a></li>
                     <li><a href="/attractive5.html">Services</a></li>
                     <li><a href="/attractive6.html">Schedule Booking</a></li>
                     <li><a href="/attractive7.html">FAQ</a></li>
+                    <li><a href="/vr.html">VR</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="parallax" style="background-image: url('path/to/your/background-image.jpg');">
         <div class="container">
             <h2>About Travelocity</h2>
             <p>Travelocity is your ultimate travel companion. We provide an easy-to-use platform for booking flights, finding the best hotels, and exploring vacation packages. Our mission is to make travel planning simple and enjoyable.</p>
